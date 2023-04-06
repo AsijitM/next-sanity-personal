@@ -9,7 +9,7 @@ export default async function Home() {
   const projects = await getprojects();
 
   return (
-    <div className="max-w-5xl mx-auto p-20">
+    <div>
       <h1 className="text-7xl font-extrabold ">
         Hello I am{' '}
         <span className="bg-gradient-to-r from-orange-400 via-red-500  to-purple-500 bg-clip-text text-transparent ">

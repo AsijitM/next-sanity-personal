@@ -11,7 +11,7 @@ export default async function Project({ params }: Props) {
   const project = await getProject(slug);
 
   return (
-    <div className="max-w-3xl mx-auto py-20 ">
+    <div>
       <header className="flex justify-between items-center  ">
         <h1 className="bg-gradient-to-r from-orange-400 via-red-500  to-purple-500 bg-clip-text text-transparent text-5xl drop-shadow  font-extrabold ">
           {project.name}
@@ -31,8 +31,13 @@ export default async function Project({ params }: Props) {
         <PortableText value={project.content} />
       </div>
 
-          <Image src={project.image} alt={project.name} width={1920} height={1080} className='mt-10 border-2 border-gray-700 rounded-lg '
-          />
+      <Image
+        src={project.image}
+        alt={project.name}
+        width={1920}
+        height={1080}
+        className="mt-10 border-2 border-gray-700 rounded-lg "
+      />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import { getprojects } from '@/sanity/sanity-utils';
 import Image from 'next/image';
 import Link from 'next/link';
+import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,9 +11,9 @@ export default async function Home() {
 
   return (
     <div>
-      <h1 className="text-7xl font-extrabold ">
+      <h1 className="text-7xl font-extrabold animate-typing overflow-hidden whitespace-nowrap  border-r-4 border-r-gray-800 pr-5">
         Hello I am{' '}
-        <span className="bg-gradient-to-r from-orange-400 via-red-500  to-purple-500 bg-clip-text text-transparent ">
+        <span className=" bg-gradient-to-r from-orange-400 via-red-500  to-purple-500 bg-clip-text text-transparent ">
           Asijit
         </span>
         !
